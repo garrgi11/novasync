@@ -1,0 +1,35 @@
+{
+  "name": "Wattlink",
+  "version": "1.0.0",
+  "description": "Wattlink: A Tokenized Utility Access System for East Africa\r 💡 Category: DeFi",
+  "homepage": "https://github.com/Shanthan2307/Wattlink#readme",
+  "bugs": {
+    "url": "https://github.com/Shanthan2307/Wattlink/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shanthan2307/Wattlink.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "hardhat": "^2.26.1"
+  },
+  "dependencies": {
+    "@1inch/limit-order-sdk": "^4.9.5-rc.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "chart.js": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "react-chartjs-2": "^5.3.0"
+  }
+}
