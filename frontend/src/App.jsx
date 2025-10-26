@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Chart } from 'chart.js/auto'
 import './App.css'
-import Diagram from './diagram';
+import Diagram from './Diagram';
 import Layout from './components/Layout';
 import Onboarding from './components/Onboarding';
 import { useWallet } from './WalletContext';
