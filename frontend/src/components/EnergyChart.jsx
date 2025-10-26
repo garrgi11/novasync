@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -217,4 +218,4 @@ const EnergyChart = () => {
   );
 };
 
-export default EnergyChart; 
+export default EnergyChart;
