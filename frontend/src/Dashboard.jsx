@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import { ethers } from 'ethers';
 import { useWallet } from './WalletContext';
 import EnergyChart from './components/EnergyChart';
@@ -137,4 +138,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard; 
+export default Dashboard;
