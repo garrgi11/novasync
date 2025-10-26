@@ -1,140 +1,61 @@
-# GridSync - Decentralized Automated Electricity Top-Up System
+NovaSync
+Powering the world, one smart trade at a time.
 
-**GridSync** is a decentralized, automated electricity top-up system designed for prepaid energy markets like those in Kenya and other developing regions. It eliminates the outdated, manual process of entering long tokens into physical meters and replaces it with a smart, **Solana-powered solution** that leverages real-time electricity pricing and decentralized trading strategies.
+Inspiration
+Growing up, I was fascinated by how different regions approach electricity access. In Kenya, households rely on a prepaid token system, where people manually enter codes into their meters to keep the lights on. It’s simple, but also inefficient and outdated. That sparked a thought — what if I could merge that idea with the U.S. electricity market, where prices constantly fluctuate and retail brokers profit off consumers? I wanted to create something that lets people directly connect to the grid, trade electricity intelligently, and cut out the middlemen. That’s how NovaSync was born.
 
----
+What it does
+NovaSync is a decentralized energy trading platform that automates how consumers buy electricity. Instead of relying on retail brokers, NovaSync connects directly to centralized electricity exchanges, executing trades on behalf of users. Consumers deposit funds, understand the risk of dynamic pricing, and let the app automatically sync electricity purchases with market fluctuations.
 
-## 🔌 The Problem
+By leveraging the Sui blockchain’s ultra-fast and low-cost architecture, trades are executed instantly with the same efficiency as quantitative trading.
 
-In many parts of the world, consumers must **prepay for electricity** and manually enter **20-digit tokens** into meters. This system is:
+✨ Key Features:
 
-* Time-consuming
-* Prone to errors
-* Blind to energy price fluctuations
+Sui Actions → automated smart contract triggers
+Automated energy sync → electricity purchased and delivered instantly
+The result: cheaper power, faster access, and no retail markups.
 
-This creates inefficiencies for both **consumers** and **utility providers**, leaving people paying more than they should.
+How I built it
+I designed NovaSync as a smart contract-powered system that connects electricity market APIs with the Sui blockchain’s scalable architecture.
 
----
+🔨 Build process:
 
-## ⚡ Our Solution
+Architected an automated trading engine that reads market prices and executes buys in real time
+Used Sui Pay for smooth, low-fee user transactions
+Leveraged Sui smart contracts + Sui Actions to automate trade execution
+Modeled the Kenyan prepaid token system — but replaced manual entry with instant digital sync
+Challenges I ran into
+The hardest challenge was bridging traditional electricity systems with blockchain.
 
-GridSync automates prepaid electricity purchases through **Web3 + Solana integration**:
+Energy markets are complex — simulating trades required extensive design around APIs and smart contracts. Consumer risk management was also key — electricity prices fluctuate like financial assets, so I had to design a framework that balanced automation with transparency. And on the technical side, ensuring trades executed instantly without lag meant deep optimization of the Sui blockchain’s parallel transaction architecture.
 
-1. **Direct Payment Integration** – Linking payments directly to **meter IDs**, automatically crediting electricity without manual input.
-2. **Solana Trading Strategies** – Users deposit SOL and GridSync executes automated trading strategies using **Solana smart contracts**.
-3. **Smart Execution** – GridSync buys electricity at **optimal times** (like off-peak hours at night) for maximum savings.
-4. **Instant Delivery** – Tokens are instantly credited to the user’s meter — no manual typing required.
+Accomplishments that I'm proud of
+I turned an idea inspired by Kenya’s prepaid system into a next-gen electricity trading prototype.
 
----
+🏆 Highlights:
 
-## ⚙️ How It Works
+Eliminated retail brokers who profit off consumers
+Proved blockchain can power real-world utilities beyond finance
+Showed how Sui’s speed, scalability, and zero-gas architecture make it uniquely suited for decentralized energy
+What I learned
+This project taught me how real-world systems can inspire Web3 innovation.
 
-1. **Payment**: User pays via fiat or crypto through **Solana Pay**.
-2. **Deposit**: User deposits SOL into the GridSync app.
-3. **Automated Trading**: Smart contracts use **custom Solana trading strategies** to purchase electricity when rates are favorable.
-4. **Credit Delivery**: Tokens are automatically synced and credited to the user’s electricity meter.
+💡 Key lessons:
 
----
+How to adapt traditional infrastructure like Kenya’s token system into a modern decentralized solution
+The potential of Sui for real-time automation and microtransactions
+The importance of transparency and trust when dealing with essentials like electricity
+What’s next for NovaSync
+This is just the beginning 🚀
 
-## 🌍 Benefits
+🔮 Future plans:
 
-* **Consumers** save money by purchasing electricity at cheaper, off-peak times.
-* **Utility providers** benefit from smoother demand management.
-* **Global scalability** – Works across any prepaid electricity market.
-* **Frictionless onboarding** – Built directly on **Solana Pay + Solana Actions**.
+Expand into developing markets where prepaid models already exist
+Build risk-adjusted trading strategies for consumers
+Pilot with energy cooperatives and local utilities
+Explore cross-border electricity remittances — so families abroad can send power directly home
+⚡ Tech Stack
 
----
-
-## 🛠️ Technology Stack
-
-### Frontend
-
-* React + Vite
-* Solana Wallet Adapter integration
-* Dashboard with real-time meter balances + consumption tracking
-
-### Backend
-
-* Node.js + Express + SQLite3
-* RESTful APIs for authentication and onboarding
-* Service layer for user/meter operations
-
-### Web3 (Solana)
-
-* **Solana Pay** for seamless payments
-* **Solana Actions** for direct integrations
-* **Custom smart contracts** for automated trading and tokenized electricity
-* Mock energy pricing for demo/testing
-
----
-
-## 📂 Project Structure
-
-```
-Gridsync/
-├── frontend/                 # React frontend application
-├── backend/                  # Node.js backend application
-├── contracts/                # Solana smart contracts
-└── README.md
-```
-
----
-
-## 🚀 Quick Start
-
-### Backend Setup
-
-```bash
-cd backend  
-npm install  
-npm run dev  
-```
-
-Runs on `http://localhost:3001`
-
-### Frontend Setup
-
-```bash
-cd frontend  
-npm install  
-npm run dev  
-```
-
-Runs on `http://localhost:5173`
-
----
-
-## 🔑 API Endpoints
-
-* `POST /api/auth/check-user` – Check if user exists by wallet address
-* `POST /api/auth/onboard` – Create new user with meter ID
-* `GET /api/orders` – Retrieve user trading orders
-* `POST /api/orders` – Create new automated trading order
-
----
-
-## 👩🏾‍💻 User Flow
-
-1. Connect Solana wallet (Phantom, Solflare, etc.)
-2. Complete onboarding with **meter ID**
-3. Deposit SOL using **Solana Pay**
-4. Dashboard shows **balance + consumption**
-5. Set thresholds for **automated electricity purchases**
-6. GridSync executes trades + delivers tokens to the meter
-
----
-
-## 🔮 What’s Next
-
-* Deploy production-ready Solana smart contracts
-* Chainlink oracles for **real-time energy pricing**
-* Mobile app for **field usage in emerging markets**
-* Direct partnerships with **utility providers**
-
----
-
-## 📜 License
-
-This project is for **educational and demonstration purposes**, showcasing how Web3 and Solana can solve real-world challenges in energy access.
-
----
+Blockchain: Sui
+Automation: Sui Actions + Smart Contracts
+Market Data: Electricity exchange APIs
