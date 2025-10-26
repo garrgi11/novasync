@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useState, useEffect } from 'react'
 import { Chart } from 'chart.js/auto'
 import './App.css'
 import Diagram from './Diagram';
